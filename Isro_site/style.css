@@ -1,0 +1,854 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  font: normal 1rem Helvetica, Verdana Arial, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* header first part */
+.h1st {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 2.8rem;
+  background-color: #174973;
+}
+
+.h1st_c1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.62rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.h1st_c1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.h1st_c2 {
+  display: flex;
+  gap: 0.62rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.h1st_c2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.h1st a:hover {
+  color: rgb(8, 39, 212);
+  transition: 0.3s;
+}
+
+/* header 2nd part */
+.h2st {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(2, 7, 37);
+}
+
+.content {
+  text-align: center;
+}
+
+.content h4 {
+  margin-top: 0.95rem;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.content h2 {
+  padding: 0.62rem;
+  font-size: 1.35rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.content h6 {
+  padding-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.logo {
+  height: 95%;
+  width: 100px;
+}
+
+.g20 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 6.25rem;
+}
+
+.emblem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
+  width: 55px;
+}
+
+/* header 3rd part  */
+
+.h3st {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 45px;
+  border-bottom: solid grey 4px;
+  background-color: rgb(10, 29, 133);
+}
+
+.h3st_c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.chl_logo {
+  height: 60%;
+  width: 300px;
+}
+
+.chl_logo img {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.h3st_list_c a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* border: solid red; */
+}
+
+.h3st_list_c a:hover {
+  color: #f5ae0e;
+  transition: 0.3s;
+}
+
+.bg_video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 30px rgb(5, 14, 66);
+  overflow: hidden;
+}
+.Heading_wrapper {
+  position: absolute;
+  bottom: 0px;
+  /* z-index: 1; */
+  /* border: solid 2px orange; */
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  /* opacity: 1; */
+}
+
+.Heading {
+  /* z-index: 10; */
+  background-color: #1558ba;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+.Heading h3 {
+  opacity: 1;
+  font-weight: bold;
+  color: #fff;
+}
+
+.Heading:hover {
+  opacity: 0;
+}
+
+/* background video ke niche jo multipal option hai */
+
+.option {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 25px;
+  /* border: solid 2px red; */
+  width: 100%;
+  height: 300px;
+}
+
+.option_part {
+  /* border:  solid 2px green; */
+  position: relative;
+  /* bottom: 0px; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  gap: 10px;
+  /* height: fit-content; */
+  width: 250px;
+  height: auto;
+  /* height: auto; */
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #0884e9;
+  opacity: 0.7;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.option a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #fff;
+  transition: 0.3s;
+  border-top: solid 3px;
+  font-weight: 700;
+}
+.option a:hover {
+  color: blue;
+  transition: 0.3s;
+}
+
+.option a p {
+  border-bottom: solid 2px #fff;
+}
+
+.option_part:hover {
+  opacity: 1;
+  transition: 0.5s;
+  background-color: #06c6f7;
+}
+
+.news_section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #c9d8fa;
+  overflow-y: hidden;
+  padding: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+.news_section_left {
+  height: 100%;
+  width: 50%;
+  padding: 0 40px;
+  /* border: solid fuchsia; */
+}
+
+.news_section h1 {
+  color: #03234a;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: "verdana", serif;
+}
+
+.news_section_left_list {
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+  overflow: auto;
+  height: 200px;
+}
+
+.news_section_left_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  list-style: none;
+  background: linear-gradient(45deg, #1558ba 20%, #5e93e0 60%, #020c44);
+  border-bottom: solid 1px #c9d8fa;
+}
+
+.news_section_left_list li a {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.news_section_right {
+  height: 100%;
+  width: 50%;
+}
+
+.Highlights_img {
+  height: 200x;
+  width: 100%;
+}
+.Highlights_img img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ISRO Portals */
+
+.isro_portal {
+  overflow-y: hidden;
+  background: rgb(2, 12, 68);
+  width: 100%;
+  height: 170px;
+  padding: 15px;
+}
+.isro_portal h1 {
+  margin-bottom: 15px;
+}
+.isro_portal_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.isro_portal_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  /* border: solid 1px green;
+  background-color: red; */
+}
+.isro_portal_img img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 171, 255);
+}
+
+.isro_portal_img p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.isro_portal_img a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.isro_portal_img:hover {
+  background-color: #020c44;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+/* Recent Updates */
+
+.rececnt_update {
+  overflow-y: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.recent {
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  color: #174973;
+  padding: 10px;
+}
+
+/* Recent Updates pecture */
+
+.recent_pecture_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.recent_pecture {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  padding: 1.25rem 0.3rem;
+  border-top: solid 2px #1558ba;
+  box-shadow: 5px 10px 29px 0 rgba(129, 134, 169, 0.88);
+}
+
+.recent_pecture_add {
+  position: relative;
+  height: 100%;
+  width: 19rem;
+}
+
+.recent_pecture_add_content {
+  background-color: black;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.recent_pecture_add_content:hover {
+  opacity: 0.5;
+  transition: 0.7s;
+}
+
+.recent_pecture_add_content h4 {
+  padding: 2px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.recent_pecture_add_content p {
+  padding: 2px;
+  color: #e4ff00;
+}
+
+.recent_pecture_add_content a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.recent_pecture_add_content a:hover {
+  color: #f5ae0e;
+  transition: 0.3s;
+}
+
+.recent_pecture_add img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ISRO Centres & Units */
+
+.isro_center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+
+  margin-bottom: 50px;
+}
+
+.isro_center_heding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 98%;
+  background-color: #020c44;
+  box-shadow: 5px 20px 30px 0 rgba(28, 32, 59, 0.88);
+}
+
+.isro_center_heding_content {
+  padding: 25px;
+}
+.isro_center a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.isro_img_wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform-style: preserve-3d;
+  transform: rotateX(-8deg) rotateZ(0deg);
+}
+
+.imges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
+  width: 100%;
+  position: absolute;
+  animation: rotate 38s infinite linear;
+  transform-style: preserve-3d;
+  float: right;
+}
+.isro_center_img {
+  height: 100px;
+  width: 80px;
+  border-radius: 3px;
+  position: absolute;
+}
+
+@keyframes rotate {
+  frome {
+  }
+  to {
+    transform: rotatey(360deg);
+  }
+}
+.isro_center_img img {
+  border-radius: 3px;
+  height: 100%;
+  width: 100%;
+}
+/* image rotating */
+.isro_center_img:nth-child(1) {
+  transform: rotatey(0deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(2) {
+  transform: rotatey(20deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(3) {
+  transform: rotatey(40deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(4) {
+  transform: rotatey(60deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(5) {
+  transform: rotatey(80deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(6) {
+  transform: rotatey(100deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(7) {
+  transform: rotatey(120deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(8) {
+  transform: rotatey(140deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(9) {
+  transform: rotatey(160deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(10) {
+  transform: rotatey(180deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(11) {
+  transform: rotatey(200deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(12) {
+  transform: rotatey(220deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(13) {
+  transform: rotatey(240deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(14) {
+  transform: rotatey(260deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(15) {
+  transform: rotatey(280deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(16) {
+  transform: rotatey(300deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(17) {
+  transform: rotatey(320deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(18) {
+  transform: rotatey(340deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(19) {
+  transform: rotatey(360deg) translateZ(300px);
+}
+
+/* image rotating end */
+
+/* right side fixed position image  */
+
+.right_side_image_posotion {
+  position: relative;
+  position: fixed;
+  right: 0px;
+  top: 200px;
+  height: 225px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right_side_image_posotion_content a {
+  position: relative;
+  left: 145px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 800;
+  transition: 0.3s;
+  color: #020c44;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.right_side_image_posotion_content a:hover {
+  width: 170px;
+  left: 30px;
+  transition: 1s;
+}
+
+.right_side_image_posotion_content img {
+  height: 50px;
+  width: 50px;
+}
+
+/* footer start */
+
+.footer {
+  height: 450px;
+  width: 100%;
+  background-color: #020c44;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-around;
+  height: 350px;
+  width: 100%;
+  border-bottom: solid grey 1px;
+}
+
+.address {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  height: 230px;
+  width: 380px;
+}
+
+.address h4 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.address p {
+  font-size: 15px;
+}
+
+.address span {
+  /* border: solid red; */
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.footer_li_content {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.footer_li_content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+
+.footer_li_content li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1;
+}
+
+.footer_li_content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_li_content i {
+  color: #8b6e28;
+}
+
+.footer_li_content a:hover {
+  color: #f5ae0e;
+  transition: 0.3s;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* -----------------------------Media Query ------------------------------*/
+
+@media screen and (max-width: 700px) {
+  .h1st {
+    height: 70px;
+    /* background-color: rebeccapurple; */
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .h2st {
+    flex-wrap: wrap;
+    height: auto;
+    /* background-color: red; */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .h3st {
+    flex-wrap: wrap;
+    height: auto;
+    /* background-color: red; */
+  }
+  .h3st_c {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bg_video {
+    flex-wrap: wrap;
+  }
+  .Heading_wrapper {
+    display: none;
+  }
+  .option {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .news_section {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .news_section_left {
+    display: block;
+    width: 100%;
+  }
+  .news_section_left_list li a {
+    font-size: 10px;
+  }
+
+  .news_section_right {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .isro_portal {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .isro_portal_wrapper {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .recent_pecture {
+    justify-content: center;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    height: auto;
+  }
+  .footer_top{
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 30px;
+  }
+  .address{
+    border-bottom: solid grey 1px;
+  }
+
+}
+
