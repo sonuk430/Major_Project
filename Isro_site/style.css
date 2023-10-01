@@ -5,6 +5,7 @@
 }
 
 .wrapper {
+  border: solid 3px orange;
   width: 100%;
   font: normal 1rem Helvetica, Verdana Arial, sans-serif;
   color: #fff;
@@ -764,6 +765,14 @@
 
 /* -----------------------------Media Query ------------------------------*/
 
+@media screen and (max-width: 700px) {
+  .isro_img_wrapper {
+    height: auto;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: red;
+  }
+}
 @media screen and (max-width: 700px) {
   .h1st {
     height: 70px;
