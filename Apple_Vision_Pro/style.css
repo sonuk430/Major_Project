@@ -1,0 +1,165 @@
+@import url("https://v1.fontapi.ir/css/SFProDisplay:200;300;400;500;600;700;800;900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SF PRO DISPLAY;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 100%;
+  background-color: #000;
+}
+
+.navbar_item {
+  /* border: solid 2px rebeccapurple; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+}
+.navbar_item > ul {
+  /* border: solid 2px red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+}
+
+.navbar_item > ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  /* border: solid 1px red; */
+}
+
+.navbar_item > ul li a {
+  text-decoration: none;
+  font-weight: 100;
+  color: #fff;
+  opacity: 0.92;
+  font-size: 12px;
+  font-weight: 400;
+  /* letter-spacing: -0.01em; */
+  letter-spacing: 0.8px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.heading {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  top: 0px;
+  height: 45px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.956);
+  /* border: solid 2px red; */
+}
+.heading_wrapper {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.heading_wrapper > div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  opacity: 0.92;
+}
+
+.heading_wrapper > div button {
+  text-align: center;
+  border-radius: 50px;
+  color: #000;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#herosection {
+  position: relative;
+  top: -30px;
+  min-height: 655px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000;
+}
+
+#herosection > img {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+}
+
+.herosection_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 90px;
+  height: 45px;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.herosection_heading > h2{
+  color: #6e6e73;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.009em;
+  font-weight: 600;
+}
+
+.apple_vision{
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  height: 45px;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.apple_vision > img{
+  height: 100%;
+  width: auto;
+}
