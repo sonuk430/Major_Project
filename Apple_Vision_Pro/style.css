@@ -136,7 +136,6 @@ body {
   bottom: 90px;
   height: 45px;
   width: 100%;
-  /* background-color: aqua; */
 }
 
 .herosection_heading > h2{
@@ -156,10 +155,87 @@ body {
   z-index: 5;
   height: 45px;
   width: 100%;
-  /* background-color: aqua; */
 }
 
 .apple_vision > img{
   height: 100%;
   width: auto;
+}
+
+.empty_div{
+  height: 100px;
+  width: 100%;
+}
+
+.video_heading{
+  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.video_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 720px;
+  height: 180px;
+  width: 100%;
+}
+
+.video_content > h1{
+  width: 70%;
+  font-size: 48px;
+  line-height: 1.0834933333;
+  font-weight: 700;
+  letter-spacing: -0.003em;
+  opacity: 0.9;
+}
+
+.video_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.video_div > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+}
+.video_div > div > video{
+  height: 100%;
+  width: 100%;
+}
+
+.never_seen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+  border: solid 2px teal;
+}
+.never_seen > h1{
+  font-size: 40px;
+  line-height: 1.0834933333;
+  font-weight: 700;
+  letter-spacing: -0.003em;
+  opacity: 0.9;
+}
+
+.vision{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
 }
