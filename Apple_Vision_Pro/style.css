@@ -138,7 +138,7 @@ body {
   width: 100%;
 }
 
-.herosection_heading > h2{
+.herosection_heading > h2 {
   color: #6e6e73;
   font-size: 24px;
   line-height: 1;
@@ -146,7 +146,7 @@ body {
   font-weight: 600;
 }
 
-.apple_vision{
+.apple_vision {
   position: absolute;
   bottom: 40px;
   display: flex;
@@ -157,25 +157,25 @@ body {
   width: 100%;
 }
 
-.apple_vision > img{
+.apple_vision > img {
   height: 100%;
   width: auto;
 }
 
-.empty_div{
+.empty_div {
   height: 100px;
   width: 100%;
 }
 
-.video_heading{
-  border: solid 2px red;
+.video_heading {
+  /* border: solid 2px red; */
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
 }
 
-.video_content{
+.video_content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,7 +184,7 @@ body {
   width: 100%;
 }
 
-.video_content > h1{
+.video_content > h1 {
   width: 70%;
   font-size: 48px;
   line-height: 1.0834933333;
@@ -193,7 +193,7 @@ body {
   opacity: 0.9;
 }
 
-.video_div{
+.video_div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,27 +203,27 @@ body {
   margin-bottom: 50px;
 }
 
-.video_div > div{
+.video_div > div {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 90%;
 }
-.video_div > div > video{
+.video_div > div > video {
   height: 100%;
   width: 100%;
 }
 
-.never_seen{
+.never_seen {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 150px;
   width: 100%;
-  border: solid 2px teal;
+  /* border: solid 2px teal; */
 }
-.never_seen > h1{
+.never_seen > h1 {
   font-size: 40px;
   line-height: 1.0834933333;
   font-weight: 700;
@@ -231,11 +231,127 @@ body {
   opacity: 0.9;
 }
 
-.vision{
+.vision {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  gap: 20px;
   width: 100%;
+}
+
+.vision_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  height: 75px;
+  width: 100%;
+  /* border: solid 2px rebeccapurple; */
+}
+
+.vision_logo > img {
+  height: auto;
+  width: auto;
+}
+
+.watch-the_film {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 50px;
+  width: 100%;
+  
+}
+.watch-the_film> i{
+  color: #ff5a00;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.watch-the_film > a{
+  text-decoration: none;
+  opacity: 0.9;
+  line-height: 1.0834933333;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  opacity: 0.9;
+  color: #ff5a00;
+}
+
+.watch-the_film >h2{
+  font-size: 24px;
+  
+}
+
+.watch-the_film > a:hover {
+  border-bottom: solid 2px;
+}
+
+.available {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+}
+
+.available h2 {
+  font-size: 24px;
+  color: #86868b;
+  opacity: 0.9;
+  line-height: 1.0834933333;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  opacity: 0.9;
+}
+
+
+.vision_pro_glass{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+
+.vision_pro_glass_imageDiv{
+  margin-top: 50px;
+  height: 350px;
+  width: auto;
+}
+
+.vision_pro_glass_imageDiv> img{
+  height: 100%;
+  width: auto;
+}
+
+.btn_02{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 50px;
+  height: 60px;
+  padding: 15px 37px 15px 27px;
+  border: solid 3px #1d1d1f;
+  margin-bottom: 30px;
+  color: #1d1d1f;
+  font-size: 19px;
+  line-height: 1.2105263158;
+  font-weight: 600;
+  letter-spacing: .012em;
+  cursor: pointer;
+ transition: 0.5s;
+ background-color: #fff;
+}
+
+.btn_02:hover{
+  background-color: #1d1d1f ;
+  color: #fff;
+  transition: 0.1s;
+  
 }
