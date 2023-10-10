@@ -399,7 +399,6 @@ body {
 }
 
 .apps_section_content {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -416,32 +415,32 @@ body {
   padding-bottom: 50px;
 }
 
-.apps_section_content_wrapper > h3{
+.apps_section_content_wrapper > h3 {
   font-size: 32px;
   line-height: 1.125;
   font-weight: 700;
-  letter-spacing: .004em;
-  width: 80rem;
+  letter-spacing: 0.004em;
   margin-right: 100px;
 }
 
-.apps_section_content_wrapper > p{
+.apps_section_content_wrapper > p {
   color: #86868b;
   margin-top: 0;
   font-size: 21px;
   line-height: 1.381;
   font-weight: 600;
   letter-spacing: 0.011em;
+  max-width: 60%;
 }
 
-.btn_area{
+.btn_area {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   height: 200px;
   width: 100%;
 }
 
-.btn_3{
+.btn_3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,4 +459,5 @@ body {
   transition: 0.5s;
   background-color: rgba(255, 90, 0, 1);
   margin-top: 10px;
+  margin-left: 515px;
 }
