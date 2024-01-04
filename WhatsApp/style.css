@@ -155,3 +155,177 @@ body {
   margin: 2px 0;
   font-size: 0.6rem;
 }
+/*  staus area style starts */
+.status_area {
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  transition-duration: 300ms;
+}
+.status_area ul {
+  list-style-type: none;
+  position: relative;
+}
+.status_area ul li {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.my_status {
+  position: relative;
+  width: 35px;
+  margin-right: 10px;
+  height: 35px;
+}
+.my_status img {
+  width: 100%;
+  height: 100%;
+}
+.my_status .fa-plus {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  font-weight: lighter;
+  background-color: green;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 0.5rem;
+  border-radius: 50%;
+  padding: 2px 3px;
+}
+.status_contact {
+  margin-top: 2px;
+}
+.status_contact h5 {
+  font-weight: lighter;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.status_contact p {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+.statusTxt {
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.recent {
+  border: 3px solid #25d366 !important;
+  border-radius: 50%;
+}
+
+/*  staus area style end */
+
+
+/* call area style start */
+
+.call_area {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 238, 236);
+    transition-duration: 300ms;
+  }
+  .call_area ul {
+    list-style-type: none;
+  }
+  .call_area ul li {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  .call_area {
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    max-height: 380px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 20px;
+    left: 100%;
+    transition-duration: 200ms;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  .call_area ul {
+    list-style: none;
+    position: relative;
+  }
+  
+  .call_area ul li {
+    display: flex;
+    /* justify-content: center;
+      align-items: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .icon_call {
+    width: 40px;
+    height: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    place-items: center;
+    display: grid;
+    margin-right: 14px;
+  }
+  .call_link {
+    margin-top: 3px;
+  }
+  .call_link h5 {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .call_link small {
+    font-size: 0.7rem;
+    opacity: 0.6;
+  }
+  
+  .call_img {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    place-items: center;
+    display: grid;
+    margin-right: 14px;
+  }
+  .call_img img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .fa-long-arrow-right,
+  .fa-long-arrow-left {
+    color: #25d366;
+    rotate: -50deg;
+  }
+  
+  .calling_icon {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #25d366;
+  }
+
+/* call area style end */
