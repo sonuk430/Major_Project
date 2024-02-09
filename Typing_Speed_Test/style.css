@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  background-color: #414141;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+}
+main .contentBox .typing-text {
+  border: solid 1px orange;
+}
+main .Bottom_content {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  border: solid;
+}
+
+main .Bottom_content .result_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 1px red;
+  gap: 100px;
+}
