@@ -10,6 +10,8 @@ let cpmEl = document.querySelector(".cpm span");
 
 const tryAgainBtn = document.querySelector(".tryAgain");
 
+
+
 let timer;
 let maxTime = 60;
 let timeLeft = maxTime;
@@ -94,6 +96,7 @@ function initTimer() {
 }
 
 function reset() {
+
   randomParagraph();
   inputDataEl.value = "";
   clearInterval(timer);
@@ -108,3 +111,11 @@ randomParagraph();
 
 inputDataEl.addEventListener("input", typing);
 tryAgainBtn.addEventListener("click", reset);
+
+
+
+
+ 
+
+
+

@@ -81,9 +81,10 @@ main .Bottom_content .result_details {
 
 .typing-text p span.active {
   color: #17a2b8;
+  position: relative;
 }
 
-/* .typing-text p span.active::before{
+.typing-text p span.active::before {
   position: absolute;
   content: "";
   height: 2px;
@@ -92,14 +93,14 @@ main .Bottom_content .result_details {
   left: 0;
   opacity: 0;
   border-radius: 5px;
-  background: #17A2B8;
+  background: #17a2b8;
   animation: blink 1s ease-in-out infinite;
 }
-@keyframes blink{
-  50%{ 
-    opacity: 1; 
+@keyframes blink {
+  50% {
+    opacity: 1;
   }
-} */
+}
 
 .tryAgain {
   height: 60%;
