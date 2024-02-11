@@ -10,8 +10,6 @@ let cpmEl = document.querySelector(".cpm span");
 
 const tryAgainBtn = document.querySelector(".tryAgain");
 
-
-
 let timer;
 let maxTime = 60;
 let timeLeft = maxTime;
@@ -96,7 +94,6 @@ function initTimer() {
 }
 
 function reset() {
-
   randomParagraph();
   inputDataEl.value = "";
   clearInterval(timer);
@@ -112,10 +109,35 @@ randomParagraph();
 inputDataEl.addEventListener("input", typing);
 tryAgainBtn.addEventListener("click", reset);
 
+// **********************************************
 
+function darkLightMode() {
+  const body = document.body;
+  const setMode = document.querySelector(".setMode");
+  const light = document.querySelector(".light");
+  const dark = document.querySelector(".dark");
 
+  let initvalue = true;
 
- 
+  setMode.addEventListener(
+    "click",
+    () => {
+      if (initvalue == true) {
+        initvalue = false;
+        body.style.backgroundColor = "#e8eaed";
+        light.style.display = "block";
+        dark.style.display = "none";
+        console.log("dark");
+      } else {
+        initvalue = true;
+        body.style.backgroundColor = "#202124";
+        light.style.display = "none";
+        dark.style.display = "block";
+        console.log("light");
+      }
+    },
+    false
+  );
+}
 
-
-
+darkLightMode();

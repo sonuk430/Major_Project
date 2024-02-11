@@ -11,13 +11,16 @@ ul li {
 
 body,
 html {
+    background-color: #e8eaed;
   height: 100%;
   width: 100%;
 }
 
 main {
+  position: relative;
   height: 100%;
-  background-color: #414141;
+  /* background-color: #e8eaed; */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,4 +113,30 @@ main .Bottom_content .result_details {
   align-items: center;
   justify-content: center;
   padding: 15px;
+}
+
+main .setMode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30px;
+  right: 30px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  /* border: solid 1px orange; */
+}
+
+main .setMode .light {
+  /* background-color: #eee; */
+  position: absolute;
+  display: none;
+}
+
+main .setMode .dark {
+  /* background-color: #222; */
+  position: absolute;
+  /* border: solid; */
 }
