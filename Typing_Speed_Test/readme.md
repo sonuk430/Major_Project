@@ -29,8 +29,8 @@ This is a simple web application designed to help users improve their typing spe
 
 
 ## UI
-![image](image.png)
-![image](image-1.png)
+![image](./Assets/image.png)
+![image](./Assets/image-1.png)
 
 ## Contributing
 If you'd like to contribute to this project, please follow these guidelines:
