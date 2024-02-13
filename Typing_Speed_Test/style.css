@@ -9,18 +9,17 @@ ul li {
   list-style: none;
 }
 
-body,
+/* body,
 html {
-    background-color: #e8eaed;
+  background-color: #e8eaed;
   height: 100%;
   width: 100%;
-}
+} */
 
 main {
   position: relative;
-  height: 100%;
-  /* background-color: #e8eaed; */
-
+  overflow: hidden;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,13 +27,104 @@ main {
   text-align: center;
 }
 
+main .hero {
+  z-index: 10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main .start {
+  position: absolute;
+  z-index: 20;
+}
+
+/* ****************** */
+
+main .start button {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+main .start button::after,
+main .start button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+main .start button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #3f3fa8;
+  border-radius: 10px;
+}
+
+main .start button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+main .start button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+main .start button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+main .start button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+/* ************************* */
+
+main .hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 main .inputData {
-  height: 50px;
   max-width: 500px;
   border-radius: 25px;
   border: none;
   padding: 25px;
   font-size: 30px;
+  border: solid 1px;
 }
 
 main .contentBox {
@@ -44,12 +134,11 @@ main .contentBox {
   justify-content: center;
   gap: 100px;
   width: 60%;
-  /* border: solid 2px yellow; */
 }
 
 main .contentBox .typing-text {
   font-size: 30px;
-  background-color: #393737;
+  background-color: rgb(82, 89, 99, 0.1);
 }
 
 main .Bottom_content {

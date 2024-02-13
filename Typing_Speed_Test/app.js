@@ -125,15 +125,17 @@ function darkLightMode() {
       if (initvalue == true) {
         initvalue = false;
         body.style.backgroundColor = "#e8eaed";
+        body.style.color = "#202124";
         light.style.display = "block";
         dark.style.display = "none";
-        console.log("dark");
+        // console.log("dark");
       } else {
         initvalue = true;
         body.style.backgroundColor = "#202124";
+        body.style.color = "#e8eaed";
         light.style.display = "none";
         dark.style.display = "block";
-        console.log("light");
+        // console.log("light");
       }
     },
     false
@@ -141,3 +143,15 @@ function darkLightMode() {
 }
 
 darkLightMode();
+
+function start() {
+  const startBtn = document.querySelector("#startBtn");
+  const hero = document.querySelector(".hero");
+
+  startBtn.addEventListener("click", (e) => {
+    startBtn.style.display = "none";
+    hero.style.display = "none";
+  });
+}
+
+start();
