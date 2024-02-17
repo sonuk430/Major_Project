@@ -56,6 +56,7 @@ const renderCountry = function (data, className = "") {
   }
   console.log(cName);
 
+  // ****************************jsx*******************************************
   const html = `
   <article class="country ${className}">
     <img class="country__img" src="${data.flags.png}" />
