@@ -54,7 +54,7 @@ const renderCountry = function (data, className = "") {
   for (let key in corrancyName) {
     cName = corrancyName[key].name;
   }
-  console.log(cName);
+  // console.log(cName);
 
   // ****************************jsx*******************************************
   const html = `
