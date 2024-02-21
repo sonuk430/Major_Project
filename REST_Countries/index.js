@@ -88,5 +88,5 @@ const getCountryData = function (counrty) {
 };
 
 getCountryData("bharat");
-getCountryData("usa");
+// getCountryData("usa");
 // getCountryData("usa");
